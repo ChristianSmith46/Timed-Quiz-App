@@ -1,0 +1,50 @@
+/* make the header have the high scores link and timer on the same line on opposite sides */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#startPage {
+    align-items: center;
+    text-align: center;
+}
+
+/* starting display none because by default it shouldn't display until the button is pressed */
+#questionPage {
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+/* all the list items for the answers have border */
+#answers li {
+    border: 2px black groove;
+    text-align: left;
+    padding: 10px;
+    
+}
+
+/* when you hover over a list item in the answers it changes the background to aqua to identify that you click one */
+#answers li:hover {
+    background-color: aqua;
+}
+
+#endPage {
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+#highscorePage {
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+#highscorePage li {
+    border: 2px black groove;
+    padding: 10px;
+    
+}

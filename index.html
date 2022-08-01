@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <header>
+        <p><a id="highscoreLink" href="#">View high scores</a></p>
+        <p>timer: <span id="timer"></span></p>
+    </header>
+
+    <main>
+        <section id="startPage">
+            <h1>Coding Quiz Challenge</h1>
+            <p>
+                Would you like to start the quiz?
+            </p>
+            <button id="startButton">start</button>
+
+
+        </section>
+
+
+        <section id="questionPage">
+            <h1 id="question">What is the answer?</h1>
+            <ol id="answers">
+            </ol>
+            <hr>
+            <h2 id="response"></h2>
+        </section>
+
+        <section id ="endPage">
+            <h1>All done!</h1>
+            <p>
+                Your final score is <span id="score"></span>
+            </p>
+            <form>
+                <label>Enter initials: </label>
+                <input id="initials" type="text" placeholder="intials">
+                <input type="button" id="submitInitials">Submit</button>
+            </form>
+        </section>
+
+        <section id="highscorePage">
+            <h1>High scores</h1>
+            <ol id="scoresList">
+            </ol>
+        </section>
+    </main>
 
 
 
