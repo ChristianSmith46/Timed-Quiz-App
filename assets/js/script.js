@@ -22,6 +22,14 @@ var questions = [{
     options : ["strings", "booleans", "alerts", "numbers"],
     answer : "alerts"
 },  {
+    question : "A very usefull tool used during development and debugging for printing content to the debugger is:",
+    options : ["JavaScript", "terminal/bash", "for loops", "console.log"],
+    answer : "console.log"
+},  {
+    question : "The condition in an if / else statement is enclosed with _____.",
+    options : ["quotes", "curly brackets", "parenthesis", "square brackets"],
+    answer : "parenthesis"
+},  {
     question : "Arrays in JavaScript can be used to store _____.",
     options : ["numbers and strings", "other arrays", "booleans", "all of the above"],
     answer : "all of the above"
@@ -118,6 +126,9 @@ function checkAnswer(event) {
             timer = 0;
         }
         timerEl.innerHTML = timer;
+        currentQuestion++;
+        clearOptions();
+        giveQuestion();
     }
 
 }
